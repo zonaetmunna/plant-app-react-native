@@ -1,4 +1,4 @@
-export const typography={
-     primary:'Roboto',
-     secondaryBold:'Antonio'
-}
+export const typography = {
+  primary: "Roboto",
+  secondaryBold: "Antonio",
+};
