@@ -12,6 +12,7 @@ import Header from "../components/header/Header";
 import { PLANET_LIST } from "../data/planetList";
 import { colors } from "../thems/color";
 import { AntDesign } from "@expo/vector-icons";
+import Text from "../components/Text/Text";
 
 const Home = ({ navigation }) => {
   // flatlist render item
@@ -22,9 +23,9 @@ const Home = ({ navigation }) => {
         onPress={() => navigation.navigate("Details", { planet: item })}
         style={styles.item}
       >
-        <View style={{ flexDirection: row, alignItems: center }}>
+        <View style={{ flexDirection: "row", alignItems: "center" }}>
           <View style={[styles.circle, { backgroundColor: colors }]} />
-          <Text preset="small">{name}</Text>
+          <Text preset="h3">{name}</Text>
         </View>
         <AntDesign name="right" size={18} color="white" />
       </Pressable>
